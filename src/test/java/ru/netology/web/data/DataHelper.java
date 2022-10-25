@@ -10,6 +10,7 @@ import java.util.Random;
 
 @Value
 public class DataHelper {
+
     private static Faker fake = new Faker(new Locale("ru"));
 
     private DataHelper() {
@@ -34,6 +35,7 @@ public class DataHelper {
     public static CardInfo getCardNumber2() {
         return new CardInfo("5559000000000002");
     }
+
 
     public static int getPossibleAmount(int balance) {
 
@@ -60,4 +62,5 @@ public class DataHelper {
     public static class CardInfo {
         String cardNumber;
     }
+
 }
